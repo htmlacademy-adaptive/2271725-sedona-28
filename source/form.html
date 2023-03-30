@@ -39,22 +39,161 @@
     </nav>
   </header>
 
-    <main class="main-container">
-      <section class="hero">
-        <h1 class="visually-hidden">Отдых в Седоне.</h1>
-        <img src="images/welcome.svg" alt="Добро пожаловать в Великолепную Седону, потому что Гранд-Каньон отстой!">
-      </section>
+  <main class="main-container main-container--holder">
+    <section class="hero">
+      <h1 class="visually-hidden">Отдых в Седоне.</h1>
+      <img src="images/welcome.svg" alt="Добро пожаловать в Великолепную Седону, потому что Гранд-Каньон отстой!">
+    </section>
 
-      <section class="advantages">
-        <div class="advanatages__wrapper">
-          <header class="advantages__header">
-            <h2 class="visually-hidden">
-              Преимущества Седоны.
-            </h2>
-            <p class="advanatages__slogan">
-              Оставьте свой отзыв
-            </p>
-            <p class="advanatages__intro">
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-            </p>
-          </header>
+    <section class="subject">
+      <div class="subject__wrapper">
+        <header class="subject__header">
+          <h2 class="visually-hidden">
+            Преимущества Седоны.
+          </h2>
+          <p class="subject__slogan">
+            Оставьте свой отзыв
+          </p>
+          <p class="subject__intro">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </header>
+      </div>
+
+        <section class="form__content">
+          <h2 class="content__title">Представьтесь:</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field__group">
+              <label class="name__field" for="name">ИМЯ*:</label>
+              <div class="field__wrapper">
+                <input class="field__text" type="text" id="name" name="the-name" value="Пётр">
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="name__field" for="name">ФАМИЛИЯ*::</label>
+              <div class="field__wrapper">
+                <input class="field__text" type="text" id="name" name="void" value="Пустота">
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="name__field" for="name">Отчество:</label>
+              <div class="field__wrapper">
+                <input class="field__text" type="text" id="name" name="patronymic" value="Викторович">
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Контактная информация:</h2>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="" for="newsletter-phone">Контактный телефон*:</label>
+            <input class="" placeholder="Введите телефон" type="number" name="newsletter-phone" id="newsletter-phone">
+            <label class="" for="newsletter-email">Электронная почта*:</label>
+            <input class="field" placeholder="Введите e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+          </form>
+        </section>
+
+        <form action="https://echo.htmlacademy.ru/" method="get" class="element-style">
+        <fieldset class="filter__group">
+          <legend class="filter__title">ВАше Общее впечатление:</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="radio" name="type-of-impression" value="positive"
+                  checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden contro__input" type="radio" name="type-of-impression" value="negative">
+                <span class="control-mark"></span>
+                <span class="control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="visually-hidden contro__input" type="radio" name="type-of-impression"
+                  value="confused">
+                <span class="control-mark"></span>
+                <span class="control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter__group">
+          <legend class="filter__title">посещенные<br>достопримечательности:</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="devils-bridge" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="red-cliffs">
+                <span class="control-mark"></span>
+                <span class="control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        </form>
+    </section>
+
+    <section class="emotions">
+    <p class="emotions__title">Опишите свои эмоции:</p>
+    <p class="emotions__description">Опишите подробно все свои восторги</p>
+    <button class="emotions__button button-blue" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+    <p class="emotions__text">* — обязательные поля</p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__link link">
+        <a class="link__visit link__visit--sedona" href="#visitSEDONA"></a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте.</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе.</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме.</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано:</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
