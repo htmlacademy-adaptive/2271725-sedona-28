@@ -12,17 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #333333;
-  background-color: #f2f2f2;
-  min-width: 320px;
-  text-align: center;
-}
 .hero {
   background-image: url("../img/zigzag.svg"), url("../img/mountine.jpg");
   background-size: 100% auto, 100% auto;
@@ -110,11 +99,10 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.link__visit--sedona {
-  color: #000000;
-}
-.copyright__link {
-  color: #000000;
+.main-nav__list {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
 }
 .services {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -155,22 +143,27 @@ body {
   color: #333333;
 }
 .aside__button {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  text-transform: uppercase;
+}
+.map {
+  text-align: center;
 }
 .places {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
-  text-transform: uppercase;
 }
 .places__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 .places__description {
   font-weight: 400;
@@ -220,7 +213,6 @@ body {
 }
 .form {
   font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
   text-transform: uppercase;
 }
 .form__legend {
@@ -236,7 +228,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
   color: #333333;
 }
 .form__control {
@@ -244,7 +235,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   color: #000000;
 }
 .form__radio-label {
@@ -252,7 +242,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   color: #000000;
 }
 .form__checkbox-label {
@@ -260,10 +249,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   color: #000000;
 }
-.placeholder {
+.form__placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -272,9 +260,11 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 .form__submit {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
@@ -286,5 +276,28 @@ body {
   line-height: 21px;
   text-align: center;
   color: rgba(51, 51, 51, 0.6);
+}
+.copyright__link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.link__visit--sedona {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.site-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
