@@ -19,3 +19,34 @@
   text-align: center;
   color: #333333;
 }
+
+.services__list {
+  .list();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .services__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .services__item {
+    height: 256px;
+    width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .services__item {
+    height: 256px;
+    width: 400px;
+  }
+}
