@@ -24,7 +24,7 @@
   line-height: 21px;
 }
 
-.places__picture {
+.places__picture img {
   width: 280px;
   height: 280px;
 }
@@ -34,11 +34,31 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .places__picture img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .places__picture-road img {
+    width: 648px;
+    height: 400px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .places {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .places__picture img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .places__picture-road img {
+    width: 1200px;
+    height: 400px;
   }
 }
