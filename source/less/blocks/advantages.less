@@ -15,6 +15,8 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding: 32px 32px 35px 32px;
 }
 
 .advantages__intro {
@@ -49,36 +51,74 @@
   color: #333333;
 }
 
-.advantages__item--square {
-  background-color: #eeeeee;
-}
-
-.advantages__item--road {
-  background-color: #eeeeee;
-}
-
-.advantages__item--torists {
-  background-color: #eeeeee;
-}
-
-.advantages__item--township {
+.advantages__item--blue-bg {
   color: #ffffff;
   background-color: #81b3d2;
+
+  .advantages__title,
+  .advantages__description,
+  .advantages__number {
+    color: #ffffff;
+  }
 }
 
-.advantages__item--bridge {
-  color: #ffffff;
-  background-color: #81b3d2;
+.advantages__item--gray-bg {
+  background-color: #eeeeee;
 }
 
-.advantages__title--white {
-  color: #ffffff;
+.advantages__list {
+  .list();
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.advantages__description--white {
-  color: #ffffff;
+.advantages__item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.advantages__number--white {
-  color: #ffffff;
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .advantages__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    height: 256px;
+    width: 256px;
+  }
+
+  .advantages__item-wrapper img {
+    height: 256px;
+    width: 512px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .advantages__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    height: 256px;
+    width: 400px;
+  }
+
+  .advantages__item-wrapper img {
+    width: 800px;
+  }
 }

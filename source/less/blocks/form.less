@@ -1,6 +1,10 @@
 .form {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 
 .form__legend {
@@ -62,6 +66,7 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  align-self: start;
 }
 
 .form__text {
@@ -71,4 +76,83 @@
   line-height: 21px;
   text-align: center;
   color: rgba(51, 51, 51, 0.6);
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__fieldset {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset-testimonial {
+  width: 279px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__fieldset {
+    width: 648px;
+  }
+
+  .form__fieldset-information {
+    width: 280px;
+  }
+
+  .form__fieldset-testimonial {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__fieldset {
+    width: 960px;
+  }
+
+  .form__fieldset-information {
+    width: 430px;
+  }
+
+  .form__fieldset-testimonial {
+    width: 960px;
+  }
 }

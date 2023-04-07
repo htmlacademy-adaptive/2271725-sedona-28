@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
     <a class="main-header__logo logo"><img class="logo" src="img/logo.svg">
     </a>
@@ -16,7 +18,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-link">
+            <a class="site-link" href="index.html">
               ГЛАВНАЯ
             </a>
           </li>
@@ -64,8 +66,8 @@
 
     <section class="places">
       <div class="places__card">
-        <div class="places__picture">
-          <img src="img/catalog-img/beautiful-road.jpg" alt="Красивая дорога">
+        <div class="places__picture places__picture-road">
+          <img src="img/catalog-img/beautiful-road.jpg" width="280px" height="280px" alt="Красивая дорога">
         </div>
         <div class="places__content">
           <h3 class="places__title">Неродные просторы</h3>
@@ -76,7 +78,7 @@
       </div>
       <div class="places__card">
         <div class="places__picture">
-          <img src="img/catalog-img/cactus.jpg" alt="Красивая растительность">
+          <img src="img/catalog-img/cactus.jpg" width="280px" height="280px" alt="Красивая растительность">
         </div>
         <div class="places__content">
           <h3 class="places__title">Местная растительность</h3>
@@ -87,7 +89,7 @@
       </div>
       <div class="places__card">
         <div class="places__picture">
-          <img src="img/catalog-img/forest-road.jpg" alt="Лесная дорога">
+          <img src="img/catalog-img/forest-road.jpg" width="280px" height="280px" alt="Лесная дорога">
         </div>
         <div class="places__content">
           <h3 class="places__title">Дорога на север</h3>
@@ -98,7 +100,7 @@
       </div>
       <div class="places__card">
         <div class="places__picture">
-          <img src="img/devils-bridge.jpg" alt="Мост дьявола">
+          <img src="img/devils-bridge.jpg" width="280px" height="280px" alt="Мост дьявола">
         </div>
         <div class="places__content">
           <h3 class="places__title">Мост дьявола</h3>
@@ -114,10 +116,12 @@
       <p class="video__title">Все еще сомневаетесь?</p>
       <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <img src="img/catalog-img/video.jpg" alt="Красивое место , где можно увидеть горы">
+        <div class="video__picture">
+      <img src="img/catalog-img/video.jpg" width="280px" height="280px" alt="Красивое место , где можно увидеть горы">
       <button class="video__button-play" type="button">
         <span>Запустить видео</span>
       </button>
+        </div>
     </section>
   </main>
 
@@ -150,7 +154,7 @@
       </div>
     </div>
   </footer>
-
+  </div>
 </body>
 
 </html>

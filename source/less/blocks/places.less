@@ -1,6 +1,8 @@
 .places {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .places__title {
@@ -20,4 +22,43 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+}
+
+.places__picture img {
+  width: 280px;
+  height: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .places__picture img {
+    width: 324px;
+    height: 267px;
+  }
+
+  .places__picture-road img {
+    width: 648px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .places__picture img {
+    width: 400px;
+    height: 267px;
+  }
+
+  .places__picture-road img {
+    width: 1200px;
+    height: 400px;
+  }
 }
