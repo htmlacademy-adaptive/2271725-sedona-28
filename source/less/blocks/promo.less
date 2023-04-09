@@ -11,6 +11,8 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding: 37px 20px 0 20px;
 }
 
 .promo__intro {
@@ -20,5 +22,26 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding: 0 20px 50px 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .promo__slogan {
+    padding: 66px 155px 0 155px;
+  }
+
+  .promo__intro {
+    padding: 0 166px 67px 166px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__slogan {
+    padding: 100px 377px 0 377px;
+  }
+
+  .promo__intro {
+    padding: 0 370px 65px 372px;
+  }
+}

@@ -1,13 +1,14 @@
 .hero {
   background-image: url("../img/zigzag.svg"), url("../img/mountine.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: 100% auto, cover;
   background-position: left 0 bottom 0;
   background-color: #f2f2f2;
   background-repeat: no-repeat, no-repeat;
   text-align: center;
-  padding: 0 10px 0 10px;
-  left: -290px;
+  padding: 90px 10px 0 10px;
   height: 389px;
-  max-width: 100%;
-  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/zigzag.svg"), url("../img/mountine.jpg");
+  }
 }

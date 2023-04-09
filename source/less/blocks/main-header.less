@@ -1,13 +1,14 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
+  min-height: 56px;
 }
 
 .main-header__logo {
-  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 96px;
   text-align: center;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  transform: translateX(-50%);
 }
 
 .main-header__logo img {
@@ -19,6 +20,10 @@
   .main-header__logo img {
     width: 185px;
     height: 96px;
+  }
+
+  .main-header__logo {
+    z-index: 2;
   }
 }
 

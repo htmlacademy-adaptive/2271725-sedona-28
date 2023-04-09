@@ -1,8 +1,7 @@
 .places {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .places__title {
@@ -22,6 +21,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  background-image: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
+  padding: 0 57px;
 }
 
 .places__picture img {
@@ -29,10 +31,19 @@
   height: 280px;
 }
 
+.places__content {
+  text-align: start;
+  padding: 0 20px;
+}
+
 @media (min-width: @tablet-width) {
   .places {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .places__content {
+    background-color: #f2f2f2;
   }
 
   .places__picture img {
@@ -50,6 +61,11 @@
   .places {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .places__content {
+    background-color: #000000;
+    opacity: 0.3;
   }
 
   .places__picture img {
