@@ -36,17 +36,41 @@
   padding: 0 20px;
 }
 
+.places__card {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .places {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .places__card {
+    border: none;
+    padding: 0;
+
+    &:last-child {
+      border: none;
+    }
   }
 
   .places__content {
+    padding-top: 8px;
+    padding-bottom: 1px;
     background-color: #f2f2f2;
   }
 
   .places__picture img {
+    vertical-align: bottom;
     width: 324px;
     height: 267px;
   }
@@ -55,22 +79,50 @@
     width: 648px;
     height: 400px;
   }
+
+  .places__like {
+    padding: 0 20px;
+    text-align: end;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .places {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .places__card {
+    position: relative;
+    padding: 0;
   }
 
   .places__content {
-    background-color: #000000;
-    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .places__title,
+  .places__description,
+  .places__like {
+    color: #ffffff;
+  }
+
+  .places__like {
+    text-align: end;
   }
 
   .places__picture img {
     width: 400px;
     height: 267px;
+    vertical-align: bottom;
   }
 
   .places__picture-road img {

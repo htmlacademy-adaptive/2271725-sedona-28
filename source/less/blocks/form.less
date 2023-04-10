@@ -2,9 +2,7 @@
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 20px 0 20px;
+  flex-direction: column;
 }
 
 .form__legend {
@@ -84,9 +82,9 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  align-self: start;
+  align-self: center;
   width: 280px;
-  height: 58px;
+  padding: 16px;
 }
 
 .form__text {
@@ -101,18 +99,15 @@
 }
 
 .form__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .form__fieldset {
-  width: 280px;
+  border: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -128,11 +123,27 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    font-family: "PT Sans", "Arial", sans-serif;
-    text-transform: uppercase;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__content {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background: #dbdbdb;
+    }
   }
 
   .form__list {
@@ -150,7 +161,31 @@
 
   .form__fieldset {
     width: 648px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 48px;
+    border: none;
+  }
+
+  .form__fieldset-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #dbdbdb;
+    }
+
+    .form__legend {
+      width: 402px;
+      background-color: #ffffff;
+      position: relative;
+      transform: translateY(-50%);
+    }
   }
 
   .form__fieldset-information {
@@ -168,7 +203,6 @@
 
   .form__submit {
     width: 324px;
-    height: 58px;
     margin-top: 48px;
   }
 
@@ -225,7 +259,6 @@
 
   .form__submit {
     width: 384px;
-    height: 58px;
   }
 
   .form__text {
