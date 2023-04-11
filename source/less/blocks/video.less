@@ -20,9 +20,25 @@
   padding: 0 28px 38px 26px;
 }
 
+.video__picture {
+  position: relative;
+}
+
 .video__picture img {
   width: 280px;
   height: 177px;
+}
+
+.video__button-play {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border: 28px solid transparent;
+  border-left: 38px solid #ffffff;
+  top: 62px;
+  width: 48px;
+  height: 54px;
+  left: 129px;
 }
 
 @media (min-width: @tablet-width) {
@@ -37,6 +53,7 @@
   }
 
   .video__title {
+    font-size: 30px;
     margin-top: 58px;
     padding: 0 20px 25px 20px;
   }
