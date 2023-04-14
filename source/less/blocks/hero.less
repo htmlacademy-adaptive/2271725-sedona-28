@@ -18,6 +18,8 @@
     background-position: left 0 bottom 0;
     background-color: #f2f2f2;
     background-repeat: no-repeat, no-repeat;
+    height: 518px;
+    padding: 77px 10px 0 10px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/zigzag-tablet.svg"), url("../img/back-tablet@2x.jpg");
@@ -30,10 +32,25 @@
     background-position: left 0 bottom 0;
     background-color: #f2f2f2;
     background-repeat: no-repeat, no-repeat;
+    height: 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/zigzag-desktop.svg"), url("../img/back-desktop@2x.jpg");
       background-size: 1200px auto;
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero-welcome {
+    height: 350px;
+    width: 461px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero-welcome {
+    height: 350px;
+    width: 459px;
   }
 }
