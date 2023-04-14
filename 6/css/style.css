@@ -116,6 +116,31 @@ body {
     width: 459px;
   }
 }
+.hero--inner {
+  height: 214px;
+}
+@media (min-width: 768px) {
+  .hero--inner {
+    height: 290px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero--inner {
+    height: 301px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-welcome__sedona {
+    height: 116px;
+    width: 457px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-welcome__sedona {
+    height: 128px;
+    width: 457px;
+  }
+}
 .main-header {
   min-height: 56px;
 }
