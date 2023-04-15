@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,7 +48,7 @@
   <main class="main-container">
     <section class="hero">
       <h1 class="visually-hidden">Отдых в Седоне.</h1>
-      <img src="img/welcome.svg" width="282px" height="214px" alt="Добро пожаловать в Великолепную Седону, потому что Гранд-Каньон отстой!">
+      <img class="hero-welcome" src="img/welcome.svg" width="282px" height="214px" alt="Добро пожаловать в Великолепную Седону, потому что Гранд-Каньон отстой!">
     </section>
 
     <section class="advantages">
@@ -65,9 +68,13 @@
             <div class="advantages__item advantages__item--icon advantages__item--blue-bg">
               <h2 class="advantages__title advantages__title--white">НАСТОЯЩИЙ ГОРОДОК</h2>
             <span class="advantages__number advantages__number--white">— №1 —</span>
-            <p class="advantages__description advantages__description--white">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p class="advantages__description advantages__description--white advantages__description--text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <img src="img/beatiful-building.jpg" width="320px" height="260px" alt="Красивое здание">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
+            <img src="img/city.jpg" srcset="img/city@2x.jpg 2x" width="320px" height="260px" alt="Красивое здание">
+          </picture>
             <section class="services">
               <ul class="services__list">
                 <li class="services__item services__item--housing">
@@ -76,7 +83,7 @@
                 </li>
                 <li class="services__item services__item--food">
                   <h2 class="services__title">ЕДА</h2>
-                  <p class="services__description">Всегда заказывайте фирменный бургер, Вы НЕ разочаруетесь!</p>
+                  <p class="services__description services__description--text">Всегда заказывайте фирменный бургер, Вы НЕ разочаруетесь!</p>
                 </li>
                 <li class="services__item services__item--souvenirs">
                   <h2 class="services__title">СУВЕНИРЫ</h2>
@@ -89,9 +96,13 @@
           <div class="advantages__item advantages__item--blue-bg">
             <h2 class="advantages__title advantages__title--white">Там есть мост дьявола</h2>
             <span class="advantages__number advantages__number--white">— №2 —</span>
-            <p class="advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__description advantages__description--white advantages__description--desktop">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img src="img/devils-bridge.jpg" width="320px" height="260px" alt="Мост дьявола">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+          <img src="img/bridge.jpg" srcset="img/bridge@2x.jpg 2x" width="320px" height="260px" alt="Мост дьявола">
+          </picture>
         </li>
         <li class="advantages__item advantages__item--gray-bg">
           <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ<br></h2>
@@ -101,7 +112,7 @@
         <li class="advantages__item advantages__item--gray-bg">
           <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
           <span class="advantages__number">— №4 —</span>
-          <p class="advantages__description">Ехать в СЕДОНУ из ЛАС-ВЕГАСА совсем не скучно!</p>
+          <p class="advantages__description advantages__description--desc">Ехать в СЕДОНУ из ЛАС-ВЕГАСА совсем не скучно!</p>
         </li>
         <li class="advantages__item advantages__item--gray-bg">
           <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
@@ -119,7 +130,11 @@
     </section>
 
     <section class="map">
-      <img src="img/map-mobile.jpg" alt="Карта">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+      <img src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта и местоположение">
+      </picture>
       <span class="map__marker"></span>
     </section>
   </main>

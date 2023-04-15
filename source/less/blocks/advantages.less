@@ -16,7 +16,7 @@
   text-align: center;
   color: #000000;
   margin: 0;
-  padding: 32px 32px 35px 32px;
+  padding: 33px 33px 35px 31px;
 }
 
 .advantages__intro {
@@ -26,7 +26,8 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
-  padding: 0 18px 32px 18px;
+  padding: 0 18px 18px 18px;
+  margin: 0;
 }
 
 .advantages__title {
@@ -35,8 +36,7 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
-  margin-top: 0;
-  padding: 0 5px;
+  padding: 3px 5px 0 5px;
 }
 
 .advantages__description {
@@ -47,6 +47,14 @@
   color: #333333;
   margin-bottom: 0;
   padding: 0 13px;
+}
+
+.advantages__description--text {
+  padding: 0 6px 0 6px;
+}
+
+.advantages__description--desc {
+  padding: 0 14px 0 14px;
 }
 
 .advantages__number {
@@ -97,6 +105,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages__slogan {
+    font-size: 21px;
     padding: 32px 120px 32px 120px;
   }
 
@@ -112,6 +121,18 @@
 
   .advantages__title {
     padding: 0 31px;
+  }
+
+  .advantages__description--text {
+    padding: 0;
+  }
+
+  .advantages__description {
+    padding: 0;
+  }
+
+  .advantages__description--desc {
+    padding: 0 14px 0 14px;
   }
 
   .advantages__item--wrapper {
@@ -164,6 +185,14 @@
 
   .advantages__title {
     padding: 0 86px;
+  }
+
+  .advantages__description--text {
+    padding: 0 14px 0 14px;
+  }
+
+  .advantages__description--desktop {
+    padding: 0 33px 0 33px;
   }
 
   .advantages__item--wrapper {
