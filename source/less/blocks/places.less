@@ -24,9 +24,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  background-image: url("../img/like-icon.svg");
-  background-repeat: no-repeat;
   padding: 0 57px;
+  position: relative;
+}
+
+.places__like--icon {
+  position: absolute;
+  color: #000000;
+  margin-left: 14px;
 }
 
 .places__picture img {
@@ -70,6 +75,8 @@
     padding-top: 8px;
     padding-bottom: 1px;
     background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
   }
 
   .places__content-road {
