@@ -508,6 +508,9 @@ body {
     background-color: transparent;
     box-shadow: none;
   }
+  .site-list__link--active {
+    color: #766357;
+  }
 }
 @media (min-width: 1200px) {
   .site-list__item {
@@ -519,9 +522,6 @@ body {
   .site-list__link {
     padding: 18px 8px 17px 10px;
   }
-}
-.site-list__link--active {
-  color: #766357;
 }
 .services {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -750,9 +750,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  background-image: url("../img/like-icon.svg");
-  background-repeat: no-repeat;
   padding: 0 57px;
+  position: relative;
+}
+.places__like--icon {
+  position: absolute;
+  color: #000000;
+  margin-left: 14px;
 }
 .places__picture img {
   width: 280px;
@@ -788,6 +792,8 @@ body {
     padding-top: 8px;
     padding-bottom: 1px;
     background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
   }
   .places__content-road {
     background-color: #eaeaea;
@@ -1151,13 +1157,14 @@ body {
 .form__fieldset--testimonial {
   border: none;
 }
-.form__field--group {
+.form__field-group {
   position: relative;
 }
 .form__fieldset--wrapper {
   position: relative;
 }
-.form__contacts {
+.form__field-group--icon-phone::before {
+  content: "";
   background-image: url("../img/form/phone.svg");
   background-repeat: no-repeat;
   background-position: left 20px top 20px;
@@ -1168,7 +1175,8 @@ body {
   top: 21px;
   right: 0;
 }
-.form__email {
+.form__field-group--icon-mail::before {
+  content: "";
   background-image: url("../img/form/mail.svg");
   background-repeat: no-repeat;
   background-position: left 20px top 20px;
@@ -1249,6 +1257,11 @@ body {
   }
   .form__submit {
     width: 324px;
+  }
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media (min-width: 1200px) {
