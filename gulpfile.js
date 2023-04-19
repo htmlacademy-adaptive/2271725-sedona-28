@@ -73,7 +73,7 @@ export const svg = () =>
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-  return gulp.src('source/img/icons*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore( {
       inlineSvg: true
@@ -127,7 +127,7 @@ export const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html));
 
 }
 
