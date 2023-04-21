@@ -55,7 +55,7 @@
             Оставьте свой отзыв
           </h1>
           <p class="promo__intro">
-            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>а также о посещенных вами достопримечательностях
           </p>
         </header>
       </div>
@@ -95,8 +95,8 @@
 
     <div class="form__fieldset--wrapper">
     <fieldset class="form__fieldset form__fieldset--radio">
-      <legend class="form__legend">Ваше Общее впечатление:</legend>
-      <ul class="form__list">
+      <legend class="form__legend form__legend-radio">Ваше Общее впечатление:</legend>
+      <ul class="form__list form__list-radio">
         <li class="form__item">
           <label class="form__radio">
             <input class="visually-hidden" type="radio" name="type-of-impression" value="positive" checked>
@@ -104,7 +104,7 @@
             <span class="form__radio--label">Скорее положительное</span>
           </label>
         </li>
-        <li class="form__item">
+        <li class="form__item form__item-radio">
           <label class="form__radio">
             <input class="visually-hidden" type="radio" name="type-of-impression" value="negative">
             <span class="form__radio--mark"></span>
@@ -123,30 +123,30 @@
     </div>
 <div class="form__fieldset--wrapper">
     <fieldset class="form__fieldset form__fieldset-checkbox">
-      <legend class="form__legend">посещенные<br>достопримечательности:</legend>
+      <legend class="form__legend form__legend-checkbox">посещенные<br>достопримечательности:</legend>
       <ul class="form__list">
-        <li class="form__item">
+        <li class="form__item form__item-checkbox">
           <label class="form__checkbox">
             <input class="visually-hidden" type="checkbox" name="devils-bridge" checked>
             <span class="form__checkbox--mark"></span>
             <span class="form__checkbox--label">Мост Дьявола</span>
           </label>
         </li>
-        <li class="form__item">
+        <li class="form__item form__item-checkboxing">
           <label class="form__checkbox">
             <input class="visually-hidden" type="checkbox" name="bell-mountain" checked>
             <span class="form__checkbox--mark"></span>
             <span class="form__checkbox--label">Гора-Колокол</span>
           </label>
         </li>
-        <li class="form__item">
+        <li class="form__item form__item-checkbox">
           <label class="form__checkbox">
             <input class="visually-hidden" type="checkbox" name="slide-park" checked>
             <span class="form__checkbox--mark"></span>
             <span class="form__checkbox--label">Слайд-парк</span>
           </label>
         </li>
-        <li class="form__item">
+        <li class="form__item form__item-checkboxing">
           <label class="form__checkbox">
             <input class="visually-hidden" type="checkbox" name="red-cliffs">
             <span class="form__checkbox--mark"></span>
@@ -158,7 +158,7 @@
   </div>
   <div class="form__fieldset--wrapper">
     <fieldset class="form__fieldset form__fieldset--testimonial">
-      <legend class="form__legend">Опишите свои эмоции:</legend>
+      <legend class="form__legend form__legend-placeholder">Опишите свои эмоции:</legend>
       <textarea class="form__placeholder" name="message" id="message" cols="30" rows="10"
         placeholder="Опишите подробно все свои восторги"></textarea>
     </fieldset>
@@ -214,6 +214,7 @@
   </footer>
   </div>
 
+  <div class="modal modal--close">
   <div class="modal__container">
     <section class="modal__content">
       <h2 class="visually-hidden">
@@ -228,8 +229,10 @@
       <button class="modal__button" type="button">ОК</button>
     </section>
   </div>
+</div>
 
-  <div class="modal__aside">
+<div class="modal modal--succes modal--close">
+  <div class="modal__container-success">
     <section class="modal__wrapper">
       <h2 class="visually-hidden">
         Отзыв отправлен.
@@ -244,6 +247,7 @@
       <button class="modal__button modal__button-close" type="button">ЗАкРЫТЬ ОКНО</button>
       </div>
     </section>
+  </div>
   </div>
 
   <script src="js/script.js"></script>
