@@ -559,6 +559,14 @@ body {
     background-color: transparent;
     box-shadow: none;
   }
+  .site-list__link:hover {
+    background-color: transparent;
+    color: #81b3d2;
+  }
+  .site-list__link:active {
+    background-color: transparent;
+    color: #b3b3b3;
+  }
   .site-list__link--active {
     color: #766357;
   }
@@ -572,6 +580,14 @@ body {
   }
   .site-list__link {
     padding: 18px 8px 17px 9px;
+  }
+  .site-list__link:hover {
+    background-color: transparent;
+    color: #81b3d2;
+  }
+  .site-list__link:active {
+    background-color: transparent;
+    color: #b3b3b3;
   }
 }
 .services {
@@ -841,6 +857,7 @@ body {
   color: #000000;
   top: 0;
   left: 0;
+  opacity: 0.3;
 }
 .places__picture img {
   width: 280px;
@@ -948,6 +965,7 @@ body {
     top: 7px;
     left: 8px;
     color: #ffffff;
+    opacity: 1;
   }
   .places__picture img {
     width: 400px;
