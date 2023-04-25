@@ -5,12 +5,20 @@
   line-height: 26px;
   color: #ffffff;
   display: block;
-  padding: 13px 21px;
+  padding: 18px 21px;
   padding-bottom: 12px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #81b3d2;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -37,6 +45,16 @@
     color: #000000;
     background-color: transparent;
     box-shadow: none;
+
+    &:hover {
+      background-color: transparent;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: #b3b3b3;
+    }
   }
 
   .site-list__link--active {
@@ -54,6 +72,16 @@
   }
 
   .site-list__link {
-    padding: 18px 8px 17px 10px;
+    padding: 18px 8px 17px 9px;
+
+    &:hover {
+      background-color: transparent;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: #b3b3b3;
+    }
   }
 }
