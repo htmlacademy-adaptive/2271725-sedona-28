@@ -62,10 +62,14 @@
 
 @media (min-width: @tablet-width) {
   .places {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .places__card--big {
+    grid-column: span 2;
   }
 
   .places__title {
@@ -118,9 +122,12 @@
 
 @media (min-width: @desktop-width) {
   .places {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
+  }
+
+  .places__card--big {
+    grid-column: span 3;
   }
 
   .places__title {
