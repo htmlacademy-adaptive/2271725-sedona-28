@@ -101,6 +101,20 @@
   }
 }
 
+.form__radio-input {
+  &:disabled {
+    ~ span {
+      opacity: 0.1;
+    }
+  }
+
+  &:focus {
+    + .form__radio-mark {
+      outline: 3px solid #83b3d3;
+    }
+  }
+}
+
 .form__checkbox {
   position: relative;
   display: block;
@@ -119,6 +133,27 @@
 
     .form__checkbox-mark::before {
       opacity: 0.3;
+    }
+  }
+
+  &:focus {
+    .form__checkbox-mark {
+      outline: 3px solid #83b3d3;
+      border-radius: 4px;
+    }
+  }
+}
+
+.form__checkbox-input {
+  &:disabled {
+    ~ span {
+      opacity: 0.1;
+    }
+  }
+
+  &:focus {
+    + .form__checkbox-mark {
+      outline: 3px solid #83b3d3;
     }
   }
 }
@@ -560,4 +595,3 @@
     padding: 7px 95px 0 0;
   }
 }
-
